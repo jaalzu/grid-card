@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+:root{
+    --color-cyan:hsl(179, 62%, 43%);
+    --color-yellow:hsl(71, 73%, 54%);
+
+    --color-light-gray:hsl(204, 43%, 93%);
+    --color-gray:hsl(218, 22%, 67%);
+
+    --fs-:16px;
+    --ff-: "Karla", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: var(--ff-);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-inline: 2rem;
+    background-color: var(--color-light-gray);
+    height: 100vh;
+}
+
+.main{
+    width: 32vmax;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.39);
+    box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.39);
+}
+
+.prices{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.main .heading{
+    line-height: 1.6;
+    padding: 2.2rem;
+
+}
+
+.main .heading h1{
+    color: var(--color-cyan);
+    font-size: 1.3rem;
+    margin-bottom: .7rem;
+}
+
+.main .heading span{
+    color: var(--color-yellow);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: .870rem;
+}
+
+.main .heading p{
+    color: var(--color-gray);
+    font-size: 12.50px;
+    margin-top: .5rem;
+    font-weight: 350;
+}
+
+.prices .col-1{
+    background-color: var(--color-cyan);
+    padding: 2.2rem;
+    color: white;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.prices .col-1 h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+}
+
+.prices .col-1 p{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.prices .col-1 p span{
+    font-size: .8rem;
+    color: var(--color-light-gray);
+    font-weight: 200;
+    margin-left: .4rem;
+}
+
+.prices .col-1 .p-2{
+    font-size: .8rem;
+    font-weight: 350;
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+}
+
+button{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--color-yellow);
+    color: white;
+    padding: .9rem;
+    border-radius: 5px;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.39);
+box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.39);
+}
+
+.prices .col-2{
+    padding: 2.1rem;
+    background-color: rgb(99, 202, 202);
+    color: white;
+    line-height: 1.5;
+    border-radius: 0px 0px 10px 0px;
+
+}
+
+.prices .col-2 h2{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.prices .col-2 p{
+    font-size: 13px;
+    width: 68%;
+    font-weight: 400;
+    color: var(--color-light-gray);
+}
+
+
+@media screen and (max-width:980px){
+    
+    
+    .prices{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prices .col-1{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .prices .col-1 h2{
+        font-size: 1.2rem;
+        margin-top: -.5rem !important;
+    }
+
+    .prices .col-1 .p-2{
+        margin-bottom: 2rem !important;
+    }
+
+    .prices .col-2{
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .prices .col-2 p{
+        width: 80%;
+    }
+}
+
