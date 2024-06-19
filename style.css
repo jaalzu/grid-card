@@ -30,7 +30,7 @@ body{
 }
 
 .main{
-    width: 35vmax;
+    width: 34vmax;
     display: flex;
     flex-direction: column;
     background-color: white;
